@@ -4,10 +4,9 @@ generates c code of predefined substring searcher based on finite-state machine 
 Example of string (in abba_test.txt):
 
 ABBA__ABBAAAABBBAAABBBABBABBABBABAAB
-*///  *///            *//*//*///
-1     2               3  4  5
 
 here we have 5 entries of "ABBA" substring
+Notice that "ABBABBABBA" = 3 concatenated "ABBA" substrings
 
 Example of usage:
 

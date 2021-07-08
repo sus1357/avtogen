@@ -38,7 +38,7 @@ g++ abba_finder.c -o abba_finder
 ```
 
 Example of an output C file for ```'aba'```:
-```
+```C
 // searches for string 'aba'
 #include <stdio.h>
 int main(int argc, char **argv) {

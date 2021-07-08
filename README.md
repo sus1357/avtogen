@@ -36,3 +36,25 @@ g++ avtogen.c -o avtogen
 g++ abba_finder.c -o abba_finder
 ./abba_finder abba_test.txt
 ```
+
+Example of an output C file for ```'aba'```:
+```
+// searches for string 'aba'
+#include <stdio.h>
+int main(int argc, char **argv) {
+	int state=0, count=0;
+	char ch;
+	FILE *fp=NULL;
+	fp=fopen(argv[1], "r");
+	if(!fp) {printf("file not opened\n"); return 2;}
+	while(fscanf(fp, "%c", &ch)==1) {
+		if(state==0 && ch=='a') state++;
+		else if(state==1 && ch=='a') state=1;
+		else if(state==1 && ch=='b') state++;
+		else if(state==2 && ch=='a') {state=1; count++;}
+		else state=0;
+	}
+	printf("found %d entries of string \"aba\" in %s\n", count, argv[1]);
+	return 0;
+}
+```

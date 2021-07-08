@@ -25,16 +25,16 @@ To create a single-pass algorithm which works with interlocking substrings you c
 
 
 Example of usage:
-1) Create C file (abba_finder.c) for finding ```'ABBA'``` string
+1) Create C file (aba_finder.c) for finding ```'aba'``` string
 
 ```
 g++ avtogen.c -o avtogen
-./avtogen ABBA abba_finder.c
+./avtogen aba aba_finder.c
 ```
-2) Run abba_finder with text file including some kind of string, and it will output the amount of ```'ABBA'``` entries 
+2) Run aba_finder with text file including some kind of string, and it will output the amount of ```'aba'``` entries 
 ```
-g++ abba_finder.c -o abba_finder
-./abba_finder abba_test.txt
+g++ aba_finder.c -o aba_finder
+./aba_finder test.txt
 ```
 
 Example of an output C file for ```'aba'```:

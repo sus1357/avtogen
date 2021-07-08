@@ -27,7 +27,7 @@ int main(int argc, char **argv) {
 			"\n\tint state=0, count=0;\n\tchar ch;",
 			"\n\tFILE *fp=NULL;\n\tfp=fopen(argv[1], \"r\");",
 			"\n\tif(!fp) {printf(\"file not opened\\n\"); return 2;}",
-			"\n\twhile(fscanf(fp, \"%c\", &ch)==1) {\n"
+			"\n\twhile(fscanf(fp, \"%c\", &ch)) {\n"
 			);
 	// main algo
 	key_len  = strlen(key);

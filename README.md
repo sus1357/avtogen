@@ -47,7 +47,7 @@ int main(int argc, char **argv) {
 	FILE *fp=NULL;
 	fp=fopen(argv[1], "r");
 	if(!fp) {printf("file not opened\n"); return 2;}
-	while(fscanf(fp, "%c", &ch)==1) {
+	while(fscanf(fp, "%c", &ch)) {
 		if(state==0 && ch=='a') state++;
 		else if(state==1 && ch=='a') state=1;
 		else if(state==1 && ch=='b') state++;

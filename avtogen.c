@@ -75,7 +75,7 @@ int main(int argc, char **argv) {
 	if (key_len > 1) fprintf(fout, "\t\telse state=0;\n\t}\n");
 	//
 	fprintf(fout, "%s%s%s", "\tprintf(\"found %d entries of string \\\"", key,
-							"\\\" in %s\\n\", count,  argv[1]);\n\treturn 0;\n}");
+							"\\\" in %s\\n\", count, argv[1]);\n\treturn 0;\n}");
 	fclose(fout);
 	printf("created %s\n", progname);
 	return 0;

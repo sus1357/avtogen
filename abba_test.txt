@@ -1,5 +1,1 @@
-ABBA__ABBAAAABBBAAABBBABBABBABBABAAB
-*///  *///            *//*//*///
-1     2               3  4  5
-// example of test string
-// here we have 5 entries of A B B A string (look at *///)
+abacabacababacaba

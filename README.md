@@ -1,7 +1,7 @@
 # avtogen.c
 Generates C code of predefined substring searcher based on finite-state machine single-pass algo
 
-Description: Imagine that you have to find how many times ```str1 = 'aba'``` substring entries in ``` str2='aabababb' ```.
+Description: Imagine that you have to find how many times ```str1 = 'aba'``` substring entries in ``` str2 = 'aabababb' ```.
 <br>
 Simple algorithm comparing every substring of the ```str2``` with ```str1``` will find two entries (on 2nd and 4th positions, notice that they are interlocked), but in ```O(length_of_str1 * length_of_str2)```.
 
